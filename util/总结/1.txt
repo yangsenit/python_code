@@ -1,0 +1,16 @@
+这里要着重强调一点的是
+对于 numpy中mat  那么矩阵中的一行还是矩阵，矩阵中一列还是矩阵
+
+print type(dataMat)
+print type(dataMat[1])
+print type(dataMat[1,:])
+print type(dataMat[:,1])
+
+<class 'numpy.matrixlib.defmatrix.matrix'>
+<class 'numpy.matrixlib.defmatrix.matrix'>
+<class 'numpy.matrixlib.defmatrix.matrix'>
+<class 'numpy.matrixlib.defmatrix.matrix'>
+
+全部都是矩阵 ，现在明白了吧
+np.multiply(np.mat1,np.mat2)
+是两个矩阵的点乘
